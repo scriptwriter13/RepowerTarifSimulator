@@ -2,6 +2,8 @@
 
 Simulation für das Jahr 2027: Was würde Ihr Stromverbrauch (basierend auf alten Verbrauchsdaten) mit den neuen Tarifen kosten?
 
+Rechnungskontrolle im Jahr 2027: Es ermöglicht, anhand der heruntergeladenen Verbrauchsdaten die Rechnungskontrolle.
+
 Dieses Bash-Skript vergleicht und simuliert Stromtarife (Basis, Basis Flex, Optima und Leistung) der Repower für das Jahr 2027. Insbesondere das dynamische **Optima-Modell** wird anhand Ihres Lastgangs stundengenau nach der offiziellen Ampel-Logik (Grün, Gelb, Rot) ausgewertet.
 
 ---
