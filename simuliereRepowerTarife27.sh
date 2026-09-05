@@ -15,6 +15,23 @@
 # Sie sollten eine Kopie der GNU General Public License zusammen mit diesem
 # Programm erhalten haben. Wenn nicht, siehe <https://www.gnu.org/licenses/>.
 # ------------------------------------------------------------------
+
+# Hilfe anzeigen, wenn keine Parameter übergeben wurden oder -h/-help genutzt wird
+if [ $# -eq 0 ] || [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
+    echo "Verwendung: $0 [INPUT_FILE] [PRODUKT] [TYP] [GEMEINDE] [NETZ_EBENE] [ANLAGEN_KW]"
+    echo ""
+    echo "Beispiel: $0 lastgang.csv GRISCHUNPOWER Optima Malans NE7 0"
+    echo ""
+    echo "Standardwerte (falls nicht angegeben):"
+    echo "  INPUT_FILE    : lastgang.csv"
+    echo "  PRODUKT       : GRISCHUNPOWER"
+    echo "  TYP           : Optima"
+    echo "  GEMEINDE      : Malans"
+    echo "  NETZ_EBENE    : NE7"
+    echo "  ANLAGEN_KW    : 0"
+    exit 0
+fi
+
 # ==============================================================================
 # Repower Tarif-Simulationsskript 2027 (Optima-Modell mit Ampel-Detailauswertung)
 # ==============================================================================
